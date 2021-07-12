@@ -1,8 +1,8 @@
 print:
     push ax
     push bx
-.start: 
-    lodsb ;Load the char into al
+.start:
+    lodsb
     cmp al, 0
     jz .end
     mov ah, 0x0E
